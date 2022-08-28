@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.chat {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-top: 25px;
+}
+
+
+.page {
+    width: 100%;
+    position: relative;
+}
+
+#ocultar-chat {
+    background-color: black;
+    opacity:60%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+}
+
+.contact, .mode {
+    position: relative;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*NAVBAR--------------------------------------------------------*/
+navbar {
+  position: fixed;
+  right: 0px;
+  top: 0;
+  z-index: 100;
+  overflow-y: auto;
+  background-color: white;
+  flex-direction: column;
+  width: 275px;
+  height: 100vh !important;
+  padding: 25px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  text-align: center;
+
+  color: #000000;
+}
+
+navbar::-webkit-scrollbar {
+    width: 5px;
+    display: initial;
+  }
+  
+  /* Track */
+navbar::-webkit-scrollbar-track {
+    background: #777777;
+  }
+  
+ 
+navbar::-webkit-scrollbar-thumb {
+    background: rgb(17, 17, 17);
+  }
+  
+navbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+
+navbar h3 {
+    margin: 7px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+navbar h2 {
+    margin: 25px;
+    text-align: center;
+    width: 170px;
+    align-self: center;
+}
+
+navbar ion-icon {
+    font-size: 22px;
+}
+
+.checkmark {
+    color: green;
+    position: absolute;
+    right: 5px;
+    top: auto;
+}
+
+.content {
+    word-break: break-word !important;
+}
+
+
+.message {
+    margin: 4px 0px;
+    border-radius: 2px;
+    min-height: 40px;
+    align-items: center;
+    background-color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 9px;
+
+}
+
+.room-activity {
+    background: #DCDCDC;
+}
+
+.private {
+    background: #FFDEDE;
+}
+
+span {
+    margin-right: 5px;
+}
+
+.esconde {
+    display: none !important;
+}
+
+.target {
+    font-weight: 700;
+}
+
+.time {
+    color: #616161;
+}
+
+.header {
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 23px;
+
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 90px;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 15px 0px 12px;
+
+}
+
+.header ion-icon {
+    font-size: 42px;
+}
+
+.initial-page {
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.initial-page img {
+    margin: 73px 123px 92px;
+}
+
+.initial-page input {
+
+    width: 260px;
+    height: 54px;
+    margin-bottom: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.initial-page input::placeholder {
+    color: #AEAEAE;
+}
+
+.footer input::placeholder {
+    font-style: italic;
+    color: black;
+    font-weight: 400;
+}
+
+.initial-page button {
+    width: 109px;
+    height: 45px;
+    border: 0px;
+    background: #E7E7E7;
+    
+    border-radius: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #696969;
+}
+
+.footer input {
+    width: 97%;
+    height: 80%;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 21px;
+    border: 0px;
+    margin-bottom: 15px;
+}
+
+.send-button  {
+    position: absolute;
+    right: 19px;
+    top: 24px;
+}
+
+.footer h3 {
+    font-family: 'Roboto';
+    color: #505050;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.footer input:focus {
+    outline: none !important;
+}

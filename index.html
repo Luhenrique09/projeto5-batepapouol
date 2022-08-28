@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bate-Papo UOL</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    
+</head>
+<body>
+<!--LOGIN--------------------------------------------------->
+    <section class="container initial-page">
+        <img src="./img/logo 1.png">
+        <input type="text" id="user-name" placeholder="Digite seu nome">
+        <button onclick="login();">Entrar</button>
+    </section>
+   <!------------------------------------------------------------------>
+    <section class="container">
+        <navbar class="esconde slide-left">
+            <h2>Escolha um contato para enviar mensagem:</h2>
+            <section id="contacts"> 
+            </section>
+            <h2>Escolha a visibilidade</h2>
+            <div class="container mode" data-identifier="visibility" onclick="selectVisibility(this)">
+                <ion-icon name="ios-unlock"></ion-icon>
+                <h3>Publico</h3>
+                <ion-icon class="checkmark setted" name="checkmark"></ion-icon>
+            </div>
+            <div class="container mode" data-identifier="visibility" onclick="selectVisibility(this)">
+                <ion-icon name="ios-lock"></ion-icon>
+                <h3>Reservadamente</h3>
+                <ion-icon class="checkmark esconde" name="checkmark"></ion-icon>
+            </div>
+        </navbar>
+        <main class="esconde page">
+            <div id="ocultar-chat" class="esconde" onclick="escondeNavbar()"></div>
+            <header class="container header">
+                <img src="./img/logo 1.png">
+                <ion-icon name="people" onclick="revelaNavbar();"></ion-icon>
+            </header>
+<!------------------------------------------------------------------>
+            <div class="chat">
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <input id="message-type-box" type="text" placeholder="Escreva aqui...">
+                    <img class="send-button" onclick="sendMessage()" src="./img/Vector.svg">
+                </div>
+                <h3>Enviando para Todos (publico)</h3>
+            </footer>
+        </main>
+    </section>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
